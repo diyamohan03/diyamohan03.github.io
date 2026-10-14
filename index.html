@@ -48,6 +48,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
 /* hero */
 .hero { background: var(--pink); }
 .hero .wrap { max-width: 1040px; padding-block: clamp(48px, 9vw, 104px) clamp(36px, 6vw, 64px); }
+.hero-row { display: flex; align-items: center; gap: clamp(20px, 4vw, 48px); flex-wrap: wrap; }
+.avatar { width: clamp(120px, 8rem + 6vw, 220px); height: auto; aspect-ratio: 1 / 1; max-width: 100%; object-position: center; border-radius: 50%; object-fit: cover; border: 3px solid var(--ink); background: var(--blush); box-shadow: 6px 6px 0 var(--ink); flex: none; }
 .hero h1 { font-family: var(--display); font-weight: 600; font-size: clamp(3.6rem, 1.4rem + 10vw, 9rem); line-height: 0.86; letter-spacing: -0.045em; margin: 0; }
 .hero .hi { margin: 28px 0 0; max-width: 34ch; font-family: var(--display); font-weight: 500; font-size: clamp(1.4rem, 1.1rem + 1.3vw, 2rem); line-height: 1.2; letter-spacing: -0.01em; text-wrap: balance; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
@@ -88,12 +90,12 @@ p { margin: 0 0 16px; }
 .state.soon { background: var(--blush); color: var(--ink); }
 .proj p { margin: 0; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.tags span { font-size: 0.8rem; border: 1.5px solid var(--ink); border-radius: 999px; padding: 1px 10px; }
+.tags span { font-size: 0.8rem; line-height: 1.6; border: 1.5px solid var(--ink); border-radius: 999px; padding: 1px 10px; white-space: nowrap; }
 .proj.soon { border-style: dashed; }
 
 /* stack */
 .stack { display: grid; gap: 14px; }
-.stack div { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 12px; align-items: start; }
+.stack > div { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 12px; align-items: start; }
 .stack b { font-family: var(--pixel); font-weight: 400; font-size: 0.66rem; padding-top: 4px; }
 
 /* outside */
@@ -128,6 +130,7 @@ p { margin: 0 0 16px; }
       <a href="#work">work</a>
       <a href="#projects">projects</a>
       <a href="#stack">stack</a>
+      <a href="/Diya_Mohan_resume.pdf" target="_blank" rel="noopener">resume ↓</a>
       <a href="#contact">say hi</a>
     </nav>
   </div>
@@ -135,7 +138,10 @@ p { margin: 0 0 16px; }
 
 <section class="hero" id="top">
   <div class="wrap">
-    <h1>hi, i'm<br>diya</h1>
+    <div class="hero-row">
+      <h1>hi, i'm<br>diya</h1>
+      <img class="avatar" src="/diya.jpg" alt="Diya smiling on a rainy day in Playhouse Square" width="480" height="480">
+    </div>
     <p class="hi">I like finding the annoying step in someone's day and getting rid of it.</p>
     <div class="chips">
       <span class="chip on">✦ open to product + data roles</span>
@@ -156,8 +162,8 @@ p { margin: 0 0 16px; }
   <section class="block" id="about">
     <span class="lab">about</span>
     <h2>a little about me</h2>
-    <p>I'm finishing my master's in analytics at Georgia Tech this December. Before that I did my undergrad here in industrial engineering, which is basically four years of asking why something takes longer than it should.</p>
-    <p>That question has followed me into every job I've had. At a hospital it was provider paperwork. At UPS it was data pipelines nobody could see inside. At Rivian and Volkswagen it was developers checking build status by hand. The work looks different each time, but I always start the same way: watch how people actually work, then build the thing that saves them the trip.</p>
+    <p>I'm finishing my master's in analytics at Georgia Tech this December. Before that I did my undergrad here in industrial engineering with a concentration in data science.</p>
+    <p>Every job I've had has come down to the same question: why does this take longer than it should? At a hospital it was provider paperwork. At UPS it was data pipelines nobody could see inside. At Rivian and Volkswagen it was developers checking build status by hand. The work looks different each time, but I always start the same way: watch how people actually work, then build the thing that saves them the trip.</p>
     <p>I sit somewhere between engineering and product. I like writing the code, but I like figuring out what's worth building even more.</p>
   </section>
 
@@ -256,8 +262,8 @@ p { margin: 0 0 16px; }
       <span class="email" id="email">dmohan32@gatech.edu</span>
       <button class="btn" id="copy" type="button">copy email</button>
       <a class="btn ghost" href="https://www.linkedin.com/in/diyamohann/" target="_blank" rel="noopener">linkedin ↗</a>
-      <!-- add your GitHub here once it's set up:
-      <a class="btn ghost" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">github ↗</a> -->
+      <a class="btn ghost" href="https://github.com/diyamohan03" target="_blank" rel="noopener">github ↗</a>
+      <a class="btn ghost" href="/Diya_Mohan_resume.pdf" download="Diya_Mohan_resume.pdf">resume ↓</a>
     </div>
     <p class="foot">✦ made by diya · 2026</p>
   </div>
