@@ -1,25 +1,11 @@
-# diya mohan — personal site
+# diya-portfolio
 
-Plain HTML, no build step. Vercel serves it as-is.
+**[diyamohan.vercel.app](https://diyamohan.vercel.app)**
 
-## Put it on Vercel (about 5 minutes)
+My personal site. I wanted one place where people could see what I've worked on, read a bit about how I think, and grab my resume, without it reading like a sales pitch.
 
-**Option A: GitHub (recommended, so every push redeploys)**
-1. Create a new GitHub repo, e.g. `diya-portfolio`, and upload `index.html`, `favicon.svg`, `vercel.json`.
-2. Go to vercel.com → Add New → Project → Import that repo.
-3. Framework preset: **Other**. Leave build command and output directory empty. Click Deploy.
-4. You'll get a URL like `diya-portfolio.vercel.app`. Rename it under Settings → Domains if you want something like `diyamohan.vercel.app`.
+It covers my work at Rivian and Volkswagen Group Technologies, UPS, and Emory Healthcare, my master's practicum with Lake Forest College, and the tools I use day to day. Each job is written as a short story: what was slowing people down, and what I built to fix it.
 
-**Option B: from your terminal**
-```
-npm i -g vercel
-cd diya-portfolio
-vercel        # first time: log in, accept defaults
-vercel --prod
-```
+For the look, I went with hot pink, lowercase type, and a little Y2K, but kept the layout simple so the writing does most of the work.
 
-## Editing
-- All text lives in `index.html`. Search for the section ids: `about`, `work`, `projects`, `stack`, `outside`, `contact`.
-- Add GitHub: find the commented-out `github` link in the contact section, put in your username, and remove the `<!-- -->`.
-- New project: copy one `<article class="proj">` block. Status pill options: `in progress`, `shipped`, or use `state soon` for upcoming.
-- `src/body.html` is the same page without the `<head>` wrapper (used for the Claude preview). You can ignore it.
+Built with plain HTML and CSS, no framework, and hosted on Vercel.
