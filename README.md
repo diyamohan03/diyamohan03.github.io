@@ -6,4 +6,4 @@ My personal site. I wanted one place where people could see what I've worked on,
 
 It covers my work at Rivian and Volkswagen Group Technologies, UPS, and Emory Healthcare, my master's practicum with Lake Forest College, and the tools I use day to day.
 
-Built with plain HTML and CSS, no framework, and hosted on Vercel.
+Built with plain HTML and CSS, no framework, and hosted on github.
